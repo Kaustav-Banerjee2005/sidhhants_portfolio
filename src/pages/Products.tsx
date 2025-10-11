@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { ShoppingCart } from "lucide-react";
 
 // Product data structure - easily extendable
@@ -11,12 +13,21 @@ const products = [
     description: "A comprehensive guide to data science, covering Python, SQL, and machine learning fundamentals for aspiring data analysts.",
     price: "$29.99",
     image: "/placeholder.svg",
+    qrCode: "/placeholder.svg", // Add QR code image path here
     available: true,
   },
   // Add more products here in the future
 ];
 
 const Products = () => {
+  const [selectedProduct, setSelectedProduct] = useState<typeof products[0] | null>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const handlePurchase = (product: typeof products[0]) => {
+    setSelectedProduct(product);
+    setIsDialogOpen(true);
+  };
+
   return (
     <div className="min-h-screen pt-24 pb-16 px-6">
       <div className="container mx-auto max-w-6xl">
@@ -57,6 +68,7 @@ const Products = () => {
                 <Button 
                   className="w-full" 
                   disabled={!product.available}
+                  onClick={() => handlePurchase(product)}
                 >
                   <ShoppingCart className="mr-2 h-4 w-4" />
                   {product.available ? "Purchase" : "Out of Stock"}
@@ -65,6 +77,34 @@ const Products = () => {
             </Card>
           ))}
         </div>
+
+        <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+          <DialogContent className="sm:max-w-md">
+            <DialogHeader>
+              <DialogTitle>Scan to Pay</DialogTitle>
+              <DialogDescription>
+                Scan the QR code below to complete your purchase of {selectedProduct?.name}
+              </DialogDescription>
+            </DialogHeader>
+            <div className="flex flex-col items-center gap-4 py-4">
+              <div className="w-64 h-64 bg-muted/20 border border-border/30 rounded-lg flex items-center justify-center overflow-hidden">
+                <img 
+                  src={selectedProduct?.qrCode} 
+                  alt="Payment QR Code"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground mb-2">
+                  Amount to pay: <span className="font-bold text-foreground">{selectedProduct?.price}</span>
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  After payment, please send a screenshot to confirm your order
+                </p>
+              </div>
+            </div>
+          </DialogContent>
+        </Dialog>
       </div>
     </div>
   );
