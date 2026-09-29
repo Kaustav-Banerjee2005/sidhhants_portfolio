@@ -3,6 +3,22 @@ import { Code, Database, TrendingUp, PieChart, Users, Brush, Rocket } from "luci
 const Skills = () => {
   const skillCategories = [
     {
+      title: "Go-to-Market & Business Operations",
+      icon: Rocket,
+      color: "text-orange-400",
+      bgColor: "bg-orange-500/10 border-orange-500/20",
+      skills: [
+        { name: "Go-to-Market Strategy", level: 85 },
+        { name: "Business Operations", level: 85 },
+        { name: "Supply-side Growth", level: 80 },
+        { name: "Investor Relations", level: 75 },
+        { name: "Stakeholder Management", level: 82 },
+        { name: "Early-stage Operations", level: 80 },
+        { name: "Positioning & Messaging", level: 78 },
+        { name: "B2B Sales", level: 76 }
+      ]
+    },
+    {
       title: "Data Science & Analytics",
       icon: Database,
       color: "text-blue-400",
