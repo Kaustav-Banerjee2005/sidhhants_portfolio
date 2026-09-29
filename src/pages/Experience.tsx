@@ -124,14 +124,6 @@ const Experience = () => {
       period: "2021 - Present",
       description: "Edtech venture aimed at equipping aspiring talents with essential computer skills, fostering independence and entrepreneurial spirit.",
       skills: ["Edtech", "Web Development", "Education"]
-    },
-    {
-      title: "Head of Business Development",
-      company: "Koncept Prints",
-      period: "Since 1955 · 4th generation",
-      description: "Family-owned commercial offset printing business in Delhi serving EMS, publishing, healthcare, FMCG and retail clients.",
-      skills: ["Business Development", "Manufacturing", "Legacy Operations"]
-    }
   ];
 
   return (
@@ -161,7 +153,7 @@ const Experience = () => {
           </div>
           <div className="bg-card border border-border rounded-xl p-6 text-center">
             <div className="text-3xl font-bold text-primary mb-2">{ventures.length}</div>
-            <div className="text-sm text-muted-foreground">Ventures & Family Business</div>
+            <div className="text-sm text-muted-foreground">Ventures Founded</div>
           </div>
           <div className="bg-card border border-border rounded-xl p-6 text-center">
             <div className="text-3xl font-bold text-accent mb-2">2027</div>
@@ -200,9 +192,9 @@ const Experience = () => {
         <div className="mb-16">
           <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
             <Building className="w-8 h-8 text-primary" />
-            Ventures &amp; Family Business
+            Entrepreneurial Ventures
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {ventures.map((venture, index) => (
               <div key={index} className="bg-card border border-border rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="flex items-start justify-between mb-4">
