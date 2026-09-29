@@ -67,13 +67,17 @@ const Products = () => {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button 
-                  className="w-full" 
+                <Button
+                  className="w-full"
                   disabled={!product.available}
                   onClick={() => handlePurchase(product)}
                 >
                   <ShoppingCart className="mr-2 h-4 w-4" />
-                  {product.available ? "Purchase" : "Out of Stock"}
+                  {product.available
+                    ? "Purchase"
+                    : product.comingSoon
+                      ? "Coming Soon"
+                      : "Out of Stock"}
                 </Button>
               </CardFooter>
             </Card>

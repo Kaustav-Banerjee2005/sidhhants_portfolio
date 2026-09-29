@@ -75,6 +75,15 @@ const Footer = () => {
                   siddhant.chopra@example.com
                 </a>
               </p>
+              <p className="text-sm text-muted-foreground">
+                Phone:{" "}
+                <a
+                  href="tel:+917303230767"
+                  className="text-primary hover:underline"
+                >
+                  +91 73032 30767
+                </a>
+              </p>
               <p className="text-sm text-muted-foreground flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-primary" />
                 Delhi, India
