@@ -8,13 +8,15 @@ import { ShoppingCart } from "lucide-react";
 const products = [
   {
     id: 1,
-    name: "Data Science Fundamentals",
+    name: "Cold, Hard Slap!",
     type: "Book",
-    description: "A comprehensive guide to data science, covering Python, SQL, and machine learning fundamentals for aspiring data analysts.",
-    price: "$29.99",
+    description:
+      "By Siddhant Chopra. Book details and cover artwork still to be added.",
+    price: "₹499",
     image: "/placeholder.svg",
     qrCode: "/placeholder.svg", // Add QR code image path here
-    available: true,
+    available: false,
+    comingSoon: true,
   },
   // Add more products here in the future
 ];
