@@ -9,8 +9,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-3">About This Site</h3>
             <p className="text-sm text-muted-foreground">
-              Portfolio website for Siddhant Chopra, showcasing professional experience, 
-              skills, and products.
+              Portfolio of Siddhant Chopra — Data Science & Mathematics graduate, Founding
+              GTM & Business Operations at Tynari, and founder of WeThinkDIGI and EDU TECH BOOM.
             </p>
           </div>
 

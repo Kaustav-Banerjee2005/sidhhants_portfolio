@@ -63,7 +63,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Location</h3>
-                    <p className="text-muted-foreground">Bangalore, India</p>
+                    <p className="text-muted-foreground">Delhi, India</p>
                   </div>
                 </div>
               </Card>
@@ -74,7 +74,10 @@ const Contact = () => {
               <h3 className="text-xl font-semibold mb-4">Follow Me</h3>
               <div className="flex gap-4">
                 <a 
-                  href="#" 
+                  href="https://www.linkedin.com/in/siddhant-chopra/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Siddhant Chopra on LinkedIn"
                   className="p-3 bg-card border border-border rounded-lg hover:bg-primary/10 hover:border-primary/20 transition-all duration-300 group"
                 >
                   <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary" />

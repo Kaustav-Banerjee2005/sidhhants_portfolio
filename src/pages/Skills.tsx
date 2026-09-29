@@ -1,7 +1,23 @@
-import { Code, Database, TrendingUp, PieChart, Users, Brush } from "lucide-react";
+import { Code, Database, TrendingUp, PieChart, Users, Brush, Rocket } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
+    {
+      title: "Go-to-Market & Business Operations",
+      icon: Rocket,
+      color: "text-orange-400",
+      bgColor: "bg-orange-500/10 border-orange-500/20",
+      skills: [
+        { name: "Go-to-Market Strategy", level: 85 },
+        { name: "Business Operations", level: 85 },
+        { name: "Supply-side Growth", level: 80 },
+        { name: "Investor Relations", level: 75 },
+        { name: "Stakeholder Management", level: 82 },
+        { name: "Early-stage Operations", level: 80 },
+        { name: "Positioning & Messaging", level: 78 },
+        { name: "B2B Sales", level: 76 }
+      ]
+    },
     {
       title: "Data Science & Analytics",
       icon: Database,
@@ -44,6 +60,9 @@ const Skills = () => {
         { name: "Data Science Trading", level: 75 },
         { name: "Algorithmic Trading", level: 70 },
         { name: "Portfolio Management", level: 72 },
+        { name: "Specialized Investment Funds (SIF)", level: 70 },
+        { name: "Wealth Management", level: 68 },
+        { name: "CFA Programme", level: 60 },
         { name: "Future of Work", level: 65 }
       ]
     },
