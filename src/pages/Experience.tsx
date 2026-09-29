@@ -124,6 +124,7 @@ const Experience = () => {
       period: "2021 - Present",
       description: "Edtech venture aimed at equipping aspiring talents with essential computer skills, fostering independence and entrepreneurial spirit.",
       skills: ["Edtech", "Web Development", "Education"]
+    }
   ];
 
   return (
