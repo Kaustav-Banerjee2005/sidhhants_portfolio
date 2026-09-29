@@ -1,4 +1,4 @@
-import { Code, Database, TrendingUp, PieChart, Users, Brush } from "lucide-react";
+import { Code, Database, TrendingUp, PieChart, Users, Brush, Rocket } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [

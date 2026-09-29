@@ -23,7 +23,7 @@ const Volunteers = () => {
     {
       title: "Core Com. Member, StaDa - Media Vertical",
       organization: "Christ University, Bangalore",
-      period: "Oct 2024 - Present · 1 yr",
+      period: "Oct 2024 - May 2026 · 1 yr 8 mos",
       location: "Bangalore",
       description: "Core committee member focusing on media operations and communications.",
       category: "Media & Communications",

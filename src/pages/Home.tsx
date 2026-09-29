@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import profileImage from "@/assets/siddhant-profile.jpg";
 
 const Home = () => {
@@ -14,6 +15,9 @@ const Home = () => {
           {/* Left Content */}
           <div className="space-y-8 animate-fade-in-up">
             <div className="space-y-6">
+              <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
+                Founding GTM &amp; Business Operations · Tynari
+              </p>
               <h1 className="text-6xl lg:text-8xl font-bold leading-tight tracking-tight">
                 Hello, I'm{" "}
                 <span className="gradient-text block mt-2">
@@ -21,35 +25,40 @@ const Home = () => {
                 </span>
               </h1>
               <p className="text-xl lg:text-2xl text-muted-foreground max-w-xl leading-relaxed font-light">
-                Data Analyst & Entrepreneur passionate about transforming data into actionable insights that drive business growth.
+                Data Science &amp; Mathematics graduate working where analytics, FinTech and
+                print-on-demand meet — building go-to-market and business operations for
+                early-stage ventures.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-3">
               <div className="px-5 py-2 bg-primary/10 border border-primary/30 rounded-full backdrop-blur-sm">
-                <span className="text-primary font-medium text-sm">Data Analytics</span>
+                <span className="text-primary font-medium text-sm">Analytics</span>
               </div>
               <div className="px-5 py-2 bg-accent/10 border border-accent/30 rounded-full backdrop-blur-sm">
-                <span className="text-accent font-medium text-sm">Entrepreneurship</span>
+                <span className="text-accent font-medium text-sm">FinTech</span>
+              </div>
+              <div className="px-5 py-2 bg-primary/10 border border-primary/30 rounded-full backdrop-blur-sm">
+                <span className="text-primary font-medium text-sm">Print-on-Demand</span>
               </div>
               <div className="px-5 py-2 bg-muted/50 border border-border rounded-full backdrop-blur-sm">
-                <span className="text-muted-foreground font-medium text-sm">Digital Innovation</span>
+                <span className="text-muted-foreground font-medium text-sm">CFA Aspirant</span>
               </div>
             </div>
 
             <div className="flex gap-4 pt-6">
-              <a 
-                href="/contact" 
+              <Link 
+                to="/contact" 
                 className="px-8 py-4 bg-primary text-primary-foreground rounded-xl font-medium hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-primary/25 transform hover:-translate-y-0.5"
               >
                 Let's Connect
-              </a>
-              <a 
-                href="/experience" 
+              </Link>
+              <Link 
+                to="/experience" 
                 className="px-8 py-4 border border-border text-foreground rounded-xl font-medium hover:bg-card/50 transition-all duration-300 backdrop-blur-sm hover:border-primary/30"
               >
-                View Work
-              </a>
+                View Experience
+              </Link>
             </div>
           </div>
 
@@ -59,7 +68,7 @@ const Home = () => {
               <div className="w-80 h-96 lg:w-96 lg:h-[480px] relative group">
                 <img
                   src={profileImage}
-                  alt="Siddhant Chopra - Data Analyst & Entrepreneur"
+                  alt="Siddhant Chopra - Data Science & Mathematics Graduate"
                   className="w-full h-full object-cover rounded-3xl shadow-2xl transition-transform duration-500 group-hover:scale-105"
                 />
                 {/* Image overlay gradient */}
