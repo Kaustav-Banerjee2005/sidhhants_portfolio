@@ -39,7 +39,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Email</h3>
-                    <p className="text-muted-foreground">siddhant.chopra@example.com</p>
+                    <a
+                      href="mailto:siddhantkchopra@gmail.com"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      siddhantkchopra@gmail.com
+                    </a>
                   </div>
                 </div>
               </Card>

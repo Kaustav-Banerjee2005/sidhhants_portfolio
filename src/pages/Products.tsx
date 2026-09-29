@@ -105,7 +105,14 @@ const Products = () => {
                   Amount to pay: <span className="font-bold text-foreground">{selectedProduct?.price}</span>
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  After payment, please send a screenshot to confirm your order
+                  After payment, please send a screenshot to{" "}
+                  <a
+                    href="mailto:siddhantkchopra@gmail.com"
+                    className="text-primary hover:underline"
+                  >
+                    siddhantkchopra@gmail.com
+                  </a>{" "}
+                  to confirm your order
                 </p>
               </div>
             </div>
