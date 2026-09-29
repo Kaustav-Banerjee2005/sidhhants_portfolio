@@ -60,6 +60,9 @@ const Skills = () => {
         { name: "Data Science Trading", level: 75 },
         { name: "Algorithmic Trading", level: 70 },
         { name: "Portfolio Management", level: 72 },
+        { name: "Specialized Investment Funds (SIF)", level: 70 },
+        { name: "Wealth Management", level: 68 },
+        { name: "CFA Programme", level: 60 },
         { name: "Future of Work", level: 65 }
       ]
     },
