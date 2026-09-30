@@ -157,6 +157,44 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        {/* Highlights */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold mb-8">Highlights</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { t: "Research Paper", d: "Presented a research paper on AI in education during university." },
+              { t: "Interned in Latvia", d: "Remote Data Analyst internship with Printify's Supply Analytics team, Riga." },
+              { t: "Media Head · Blossoms'24", d: "Led the media team building the online presence of Blossoms'24, School of Sciences, Christ University." },
+              { t: "Graduated 2026", d: "Completed B.Sc. Data Science & Mathematics — near-100% attendance across semesters." },
+            ].map((h) => (
+              <div key={h.t} className="bg-card border border-border rounded-2xl p-6">
+                <p className="font-semibold text-foreground mb-2">{h.t}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">{h.d}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Recent posts */}
+        <div>
+          <h2 className="text-3xl font-bold mb-8">From LinkedIn</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              { date: "Aug 2026", t: "Why we're building Tynari", d: "Many big consumer brands started with an audience asking \"can I buy this on a shirt?\". Tynari closes the operations gap so creators can launch products in hours with zero inventory.", url: "https://www.linkedin.com/posts/siddhant-chopra_tynari-linkedin-activity-7497287942919327744-frdm" },
+              { date: "Jul 2026", t: "Next stop: Germany, Summer 2027", d: "Targeting an M.Sc. in Data Science with finance electives, preparing GRE, IELTS and German full-time.", url: "https://www.linkedin.com/posts/siddhant-chopra_germany-mastersingermany-summer2027-activity-7478353178313269248-kVlE" },
+              { date: "Jun 2026", t: "My Christ journey ends here", d: "Three years in Bangalore: projects, internships, student council, startup ideas — and where I found my footing.", url: "https://www.linkedin.com/posts/siddhant-chopra_my-christ-journey-ends-here-and-no-this-activity-7475496577349033986-3r9l" },
+              { date: "Aug 2025", t: "Third year: the plot twist", d: "Research paper, an internship in Latvia, building an app, trading and edtech dreams — all at once.", url: "https://www.linkedin.com/posts/siddhant-chopra_thirdyear-christuniversity-dataanalytics-activity-7358867218689875969-NCue" },
+            ].map((p) => (
+              <a key={p.url} href={p.url} target="_blank" rel="noopener noreferrer" className="block bg-card border border-border rounded-2xl p-6 hover:border-primary/40 transition-colors">
+                <p className="text-xs text-muted-foreground mb-2">{p.date}</p>
+                <p className="font-semibold text-foreground mb-2">{p.t}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-3">{p.d}</p>
+                <span className="text-sm text-primary">Read on LinkedIn →</span>
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
